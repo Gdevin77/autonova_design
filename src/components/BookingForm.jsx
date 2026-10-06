@@ -48,7 +48,7 @@ const BookingForm = () => {
   };
 
   return (
-    <form className="grid gap-4" onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form className="grid gap-4" onSubmit={handleSubmit(onSubmit, () => toast.error("Please complete the highlighted fields."))} noValidate>
       <Input id="fullName" label="Full name" placeholder="Your full name" error={errors.fullName?.message} {...register("fullName")} />
       <Input id="phoneNumber" label="Phone number" placeholder="e.g. +263..." error={errors.phoneNumber?.message} {...register("phoneNumber")} />
       <Select id="preferredContact" label="Preferred contact method" error={errors.preferredContact?.message} options={["Call", "WhatsApp"]} {...register("preferredContact")} />

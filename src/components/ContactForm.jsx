@@ -38,7 +38,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="grid gap-4" onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form className="grid gap-4" onSubmit={handleSubmit(onSubmit, () => toast.error("Please complete the highlighted fields."))} noValidate>
       <Input id="contactFullName" label="Full name" placeholder="Your full name" error={errors.fullName?.message} {...register("fullName")} />
       <Input id="contactPhone" label="Phone number" placeholder="e.g. +263..." error={errors.phoneNumber?.message} {...register("phoneNumber")} />
       <Select id="contactMethod" label="Preferred contact method" error={errors.preferredContact?.message} options={["Call", "WhatsApp"]} {...register("preferredContact")} />
