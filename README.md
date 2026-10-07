@@ -1,6 +1,6 @@
-# AUTONOVA Website
+# Circuit Savant Website
 
-Modern, responsive React + Vite website for AUTONOVA (Zimbabwe automotive services).
+Modern, responsive React + Vite website for Circuit Savant (Zimbabwe automotive services).
 
 ## Stack
 - Frontend: React.js + Vite + Tailwind CSS

@@ -1,5 +1,5 @@
 export const business = {
-  name: import.meta.env.VITE_BUSINESS_NAME || "AUTONOVA",
+  name: import.meta.env.VITE_BUSINESS_NAME || "Circuit Savant",
   tagline: "Professional Automotive Key & ECU Solutions",
   area: import.meta.env.VITE_SERVICE_AREA || "Anywhere in Harare",
   phoneDisplay: import.meta.env.VITE_PHONE_DISPLAY || "+263 77 123 4567",

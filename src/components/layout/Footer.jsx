@@ -8,7 +8,7 @@ const Footer = () => (
   <footer className="mt-20 border-t border-navy bg-navy text-white">
     <Container className="grid gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <h3 className="text-lg font-bold">AUTONOVA</h3>
+        <img src={`${import.meta.env.BASE_URL}logo-full.png`} alt="Circuit Savant - Precision Automotive Diagnostics & Repair" className="h-28 w-auto" />
         <p className="mt-2 text-sm text-slate-300">Professional Automotive Key & ECU Solutions. Mobile service anywhere in Harare.</p>
         <div className="mt-4 flex gap-3 text-slate-300">
           <a href={contactLinks.whatsapp} aria-label="WhatsApp" className="rounded bg-white/10 p-2 hover:text-white">

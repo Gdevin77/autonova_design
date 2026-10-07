@@ -16,7 +16,7 @@ const ServiceDetailsPage = () => {
 
   return (
     <>
-      <Seo title={`${service.title} | AUTONOVA`} description={service.description} path={`/services/${slug}`} />
+      <Seo title={`${service.title} | Circuit Savant`} description={service.description} path={`/services/${slug}`} />
       <section className="py-16">
         <SectionTitle eyebrow="Service Details" title={service.title} description={service.description} />
         <Container className="mt-8 grid gap-6 lg:grid-cols-3">

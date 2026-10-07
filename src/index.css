@@ -9,7 +9,7 @@ body { @apply bg-background text-textPrimary font-sans antialiased; }
 h1, h2, h3 { letter-spacing: -0.02em; }
 * { @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background; }
 
-.text-gradient { background: linear-gradient(90deg, #7FB0FF, #D6E4FF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.text-gradient { background: linear-gradient(90deg, #3AAAD8, #C4E8F7); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 600ms ease, transform 600ms ease; }
 .reveal-in { opacity: 1; transform: none; }
 

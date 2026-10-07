@@ -30,7 +30,7 @@ const port = Number(process.env.PORT || 5000);
 connectDb()
   .then(() => {
     app.listen(port, () => {
-      console.log(`AUTONOVA API listening on ${port}`);
+      console.log(`Circuit Savant API listening on ${port}`);
     });
   })
   .catch((error) => {

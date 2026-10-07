@@ -2,7 +2,7 @@ import ServiceRequest from "../models/ServiceRequest.js";
 import { sendRequestMail } from "../utils/mailer.js";
 
 const buildBookingHtml = (payload) => `
-  <h2>New AUTONOVA Booking Request</h2>
+  <h2>New Circuit Savant Booking Request</h2>
   <p><strong>Name:</strong> ${payload.fullName}</p>
   <p><strong>Phone:</strong> ${payload.phoneNumber}</p>
   <p><strong>Preferred Contact:</strong> ${payload.preferredContact}</p>
@@ -13,7 +13,7 @@ const buildBookingHtml = (payload) => `
 `;
 
 const buildContactHtml = (payload) => `
-  <h2>New AUTONOVA Contact Request</h2>
+  <h2>New Circuit Savant Contact Request</h2>
   <p><strong>Name:</strong> ${payload.fullName}</p>
   <p><strong>Phone:</strong> ${payload.phoneNumber}</p>
   <p><strong>Preferred Contact:</strong> ${payload.preferredContact}</p>
@@ -39,7 +39,7 @@ export const createBookingRequest = async (req, res) => {
   });
 
   await sendRequestMail({
-    subject: `AUTONOVA Booking Request - ${payload.fullName}`,
+    subject: `Circuit Savant Booking Request - ${payload.fullName}`,
     html: buildBookingHtml(payload),
     attachment: file
       ? {
@@ -65,7 +65,7 @@ export const createContactRequest = async (req, res) => {
   });
 
   await sendRequestMail({
-    subject: `AUTONOVA Contact - ${payload.fullName}`,
+    subject: `Circuit Savant Contact - ${payload.fullName}`,
     html: buildContactHtml(payload)
   });
 

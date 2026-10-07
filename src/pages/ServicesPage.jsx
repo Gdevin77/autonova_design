@@ -21,7 +21,7 @@ const ServicesPage = () => {
 
   return (
     <>
-      <Seo title="Services | AUTONOVA" description="Key programming, ECU coding, injector coding, diagnostics, and 40+ automotive services in Harare." path="/services" />
+      <Seo title="Services | Circuit Savant" description="Key programming, ECU coding, injector coding, diagnostics, and 40+ automotive services in Harare." path="/services" />
       <section className="py-16">
         <SectionTitle eyebrow="Services" title="Automotive Services" description="Search and request specialized diagnostics, programming, and coding support." />
         <Container className="mt-8">

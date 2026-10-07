@@ -12,7 +12,7 @@ const mapSrc = mapKey
 
 const ContactPage = () => (
   <>
-    <Seo title="Contact AUTONOVA" description="Call, WhatsApp, or send a service request to AUTONOVA for support anywhere in Harare." path="/contact" />
+    <Seo title="Contact Circuit Savant" description="Call, WhatsApp, or send a service request to Circuit Savant for support anywhere in Harare." path="/contact" />
     <section className="py-16">
       <SectionTitle eyebrow="Contact" title="Get In Touch" description="Reach us by call, WhatsApp, or the contact form." />
       <Container className="mt-8 grid gap-6 lg:grid-cols-2">

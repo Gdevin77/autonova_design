@@ -44,7 +44,7 @@ const jsonLd = [
     "@type": "AutoRepair",
     name: business.name,
     description: business.tagline,
-    url: "https://autonova.co.zw",
+    url: "https://gdevin77.github.io/autonova_design",
     telephone: `+${business.phoneE164}`,
     areaServed: "Harare, Zimbabwe",
     openingHoursSpecification: [
@@ -65,7 +65,7 @@ const HomePage = () => {
   return (
     <>
       <Seo
-        title="AUTONOVA - Automotive Key & ECU Solutions"
+        title="Circuit Savant - Precision Automotive Diagnostics & Repair"
         description="Professional automotive key programming, ECU coding, injector coding, diagnostics, and mobile support anywhere in Harare."
         path="/"
         jsonLd={jsonLd}
@@ -94,7 +94,7 @@ const HomePage = () => {
             </div>
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-300">
               {["Mobile service", "Fast response", "Transparent quotes"].map((t) => (
-                <li key={t} className="inline-flex items-center gap-2"><FaCheckCircle className="text-sky-400" /> {t}</li>
+                <li key={t} className="inline-flex items-center gap-2"><FaCheckCircle className="text-brand" /> {t}</li>
               ))}
             </ul>
           </div>
@@ -140,7 +140,7 @@ const HomePage = () => {
       </section>
 
       <section className="bg-surface py-20">
-        <Reveal><SectionTitle eyebrow="Why AUTONOVA" title="Done right, the first time" description="Professional process, clear communication and reliable outcomes." /></Reveal>
+        <Reveal><SectionTitle eyebrow="Why Circuit Savant" title="Done right, the first time" description="Professional process, clear communication and reliable outcomes." /></Reveal>
         <Container className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {whyItems.map((item, i) => (
             <Reveal key={item.title} delay={i * 60}>

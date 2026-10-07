@@ -1,7 +1,7 @@
 export const faqs = [
   {
     q: "Can you program a key if I lost all originals?",
-    a: "Yes. AUTONOVA can perform all-keys-lost programming for many vehicle models, then test start, lock, and immobilizer operation."
+    a: "Yes. Circuit Savant can perform all-keys-lost programming for many vehicle models, then test start, lock, and immobilizer operation."
   },
   {
     q: "How long does ECU coding usually take?",

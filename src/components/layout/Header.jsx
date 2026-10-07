@@ -21,8 +21,14 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-background/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <NavLink to="/" className="text-lg font-extrabold tracking-wide text-textPrimary">
-          AUTO<span className="text-accent">NOVA</span>
+        <NavLink to="/" className="flex items-center gap-3" aria-label="Circuit Savant home">
+          <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="" className="h-11 w-11 rounded-lg shadow-sm" />
+          <span className="leading-tight">
+            <span className="block text-base font-extrabold uppercase tracking-wide text-textPrimary sm:text-lg">
+              Circuit <span className="text-accent">Savant</span>
+            </span>
+            <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-textMuted sm:block">Automotive Diagnostics &amp; Repair</span>
+          </span>
         </NavLink>
 
         <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">

@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 
 const Seo = ({ title, description, path = "/", jsonLd, image = "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" }) => {
-  const siteName = "AUTONOVA";
-  const url = `https://autonova.co.zw${path}`;
+  const siteName = "Circuit Savant";
+  const url = `https://gdevin77.github.io/autonova_design${path}`;
 
   return (
     <Helmet>

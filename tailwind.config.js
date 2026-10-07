@@ -4,18 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#F4F7FB",
+        background: "#F3F6F8",
         surface: "#FFFFFF",
-        panel: "#EDF2F8",
-        navy: "#0A1A33",
-        line: "#E1E8F2",
-        accent: "#1A56FF",
-        accentSoft: "#1245D6",
-        textPrimary: "#0A1A33",
-        textMuted: "#5A6B84"
+        panel: "#EAF0F3",
+        navy: "#08090B",
+        brand: "#3AAAD8",
+        line: "#DDE5EA",
+        accent: "#0C7DAB",
+        accentSoft: "#096186",
+        textPrimary: "#0B0F12",
+        textMuted: "#56646E"
       },
       boxShadow: {
-        glow: "0 14px 34px rgba(26, 86, 255, 0.22)",
+        glow: "0 14px 34px rgba(12, 125, 171, 0.25)",
         card: "0 1px 2px rgba(10,26,51,.06), 0 8px 24px rgba(10,26,51,.06)"
       },
       fontFamily: {

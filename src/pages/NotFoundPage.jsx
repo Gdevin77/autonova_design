@@ -4,7 +4,7 @@ import Button from "../components/ui/Button";
 
 const NotFoundPage = () => (
   <>
-    <Seo title="Page Not Found | AUTONOVA" description="The page you requested does not exist." path="/404" />
+    <Seo title="Page Not Found | Circuit Savant" description="The page you requested does not exist." path="/404" />
     <section className="py-24">
       <Container className="text-center">
         <h1 className="text-5xl font-extrabold text-accent">404</h1>
