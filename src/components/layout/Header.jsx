@@ -20,11 +20,11 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-background/90 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between">
+      <Container className="flex h-20 items-center justify-between">
         <NavLink to="/" className="flex items-center gap-3" aria-label="Circuit Savant home">
-          <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="" className="h-11 w-11 rounded-lg shadow-sm" />
+          <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="" className="h-14 w-14 rounded-xl shadow-md ring-1 ring-black/10" />
           <span className="leading-tight">
-            <span className="block text-base font-extrabold uppercase tracking-wide text-textPrimary sm:text-lg">
+            <span className="block text-lg font-extrabold uppercase tracking-wide text-textPrimary sm:text-xl">
               Circuit <span className="text-accent">Savant</span>
             </span>
             <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-textMuted sm:block">Automotive Diagnostics &amp; Repair</span>
