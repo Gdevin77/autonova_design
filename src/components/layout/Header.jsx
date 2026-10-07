@@ -13,21 +13,21 @@ const links = [
 ];
 
 const navClass = ({ isActive }) =>
-  `text-sm font-medium transition-colors ${isActive ? "text-accent" : "text-textMuted hover:text-textPrimary"}`;
+  `text-sm font-medium transition-colors ${isActive ? "text-brand" : "text-slate-300 hover:text-white"}`;
 
 const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-background/90 backdrop-blur">
-      <Container className="flex h-20 items-center justify-between">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-navy/95 text-white backdrop-blur">
+      <Container className="flex h-24 items-center justify-between">
         <NavLink to="/" className="flex items-center gap-3" aria-label="Circuit Savant home">
-          <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="" className="h-14 w-14 rounded-xl shadow-md ring-1 ring-black/10" />
+          <img src={`${import.meta.env.BASE_URL}logo-mark.png`} alt="" className="h-14 w-auto sm:h-16" />
           <span className="leading-tight">
-            <span className="block text-lg font-extrabold uppercase tracking-wide text-textPrimary sm:text-xl">
-              Circuit <span className="text-accent">Savant</span>
+            <span className="block text-lg font-extrabold uppercase tracking-wide text-white sm:text-2xl">
+              Circuit <span className="text-brand">Savant</span>
             </span>
-            <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-textMuted sm:block">Automotive Diagnostics &amp; Repair</span>
+            <span className="hidden text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400 sm:block">Automotive Diagnostics &amp; Repair</span>
           </span>
         </NavLink>
 
@@ -42,13 +42,13 @@ const Header = () => {
           </Button>
         </nav>
 
-        <button className="rounded p-2 text-textPrimary md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu" aria-expanded={open}>
+        <button className="rounded p-2 text-white md:hidden" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu" aria-expanded={open}>
           {open ? <HiXMark size={24} /> : <HiBars3 size={24} />}
         </button>
       </Container>
 
       {open ? (
-        <div className="border-t border-line bg-surface md:hidden">
+        <div className="border-t border-white/10 bg-navy md:hidden">
           <Container className="flex flex-col gap-4 py-4">
             {links.map((link) => (
               <NavLink key={link.to} to={link.to} className={navClass} end={link.to === "/"} onClick={() => setOpen(false)}>

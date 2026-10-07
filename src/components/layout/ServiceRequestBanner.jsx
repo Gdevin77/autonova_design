@@ -4,7 +4,7 @@ import OpenNow from "../OpenNow";
 import { business, contactLinks } from "../../lib/constants";
 
 const ServiceRequestBanner = () => (
-  <div className="bg-navy text-white">
+  <div className="border-b border-white/10 bg-black text-white">
     <Container className="flex items-center justify-between gap-3 py-2 text-xs">
       <OpenNow light />
       <div className="flex items-center gap-5">
