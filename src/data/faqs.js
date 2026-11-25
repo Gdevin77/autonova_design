@@ -29,6 +29,6 @@ export const faqs = [
   },
   {
     q: "How do I request a quote?",
-    a: "Use the booking form, WhatsApp, or call directly. Share your vehicle details and fault symptoms for faster support."
+    a: "Message us on WhatsApp or call directly. Share your vehicle details and fault symptoms for faster support."
   }
 ];

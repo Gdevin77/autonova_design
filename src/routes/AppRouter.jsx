@@ -5,8 +5,6 @@ import Layout from "../components/layout/Layout";
 const HomePage = lazy(() => import("../pages/HomePage"));
 const ServicesPage = lazy(() => import("../pages/ServicesPage"));
 const ServiceDetailsPage = lazy(() => import("../pages/ServiceDetailsPage"));
-const BookPage = lazy(() => import("../pages/BookPage"));
-const ThankYouPage = lazy(() => import("../pages/ThankYouPage"));
 const AboutPage = lazy(() => import("../pages/AboutPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage"));
 const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
@@ -18,8 +16,7 @@ const AppRouter = () => (
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/:slug" element={<ServiceDetailsPage />} />
-        <Route path="/book" element={<BookPage />} />
-        <Route path="/thank-you" element={<ThankYouPage />} />
+        <Route path="/book" element={<Navigate to="/contact" replace />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/404" element={<NotFoundPage />} />

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Card from "./ui/Card";
 import Button from "./ui/Button";
+import { business, whatsappLink } from "../lib/constants";
 
 const ServiceCard = ({ service }) => (
   <Card className="flex h-full flex-col justify-between transition hover:-translate-y-1 hover:border-accent/40">
@@ -11,7 +11,7 @@ const ServiceCard = ({ service }) => (
     </div>
     <div className="mt-5 flex gap-2">
       <Button as="link" to={`/services/${service.slug}`} variant="ghost" className="px-4 py-2">Details</Button>
-      <Button as="link" to={`/book?service=${service.slug}`} className="px-4 py-2">Request this service</Button>
+      <Button as="a" href={whatsappLink(`Hi ${business.name}, I need a quote for ${service.title}.`)} target="_blank" rel="noreferrer" className="px-4 py-2">Get a quote</Button>
     </div>
   </Card>
 );

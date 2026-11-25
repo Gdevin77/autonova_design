@@ -187,7 +187,6 @@ const HomePage = () => {
             <div className="relative mt-7 flex flex-wrap justify-center gap-3">
               <a href={contactLinks.call} className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-bold text-white hover:bg-accentSoft"><FaPhoneAlt /> Call now</a>
               <a href={contactLinks.whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 text-sm font-bold text-white hover:bg-green-700"><FaWhatsapp /> WhatsApp</a>
-              <Button as="link" to="/book" variant="ghost">Book online</Button>
             </div>
           </div>
         </Container>

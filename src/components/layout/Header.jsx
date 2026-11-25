@@ -1,4 +1,6 @@
 import { HiBars3, HiXMark } from "react-icons/hi2";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { contactLinks } from "../../lib/constants";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Container from "../ui/Container";
@@ -7,7 +9,6 @@ import Button from "../ui/Button";
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/book", label: "Book" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" }
 ];
@@ -37,8 +38,8 @@ const Header = () => {
               {link.label}
             </NavLink>
           ))}
-          <Button as="link" to="/book" className="px-4 py-2">
-            Book a Service
+          <Button as="a" href={contactLinks.call} className="px-4 py-2">
+            <FaPhoneAlt className="mr-2" /> Call now
           </Button>
         </nav>
 
@@ -55,9 +56,12 @@ const Header = () => {
                 {link.label}
               </NavLink>
             ))}
-            <Button as="link" to="/book" onClick={() => setOpen(false)}>
-              Book a Service
+            <Button as="a" href={contactLinks.call}>
+              <FaPhoneAlt className="mr-2" /> Call now
             </Button>
+            <a href={contactLinks.whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-lg bg-green-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-green-700">
+              <FaWhatsapp className="mr-2" /> WhatsApp us
+            </a>
           </Container>
         </div>
       ) : null}

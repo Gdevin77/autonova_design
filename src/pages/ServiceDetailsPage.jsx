@@ -4,7 +4,7 @@ import { services } from "../data/services";
 import Container from "../components/ui/Container";
 import SectionTitle from "../components/ui/SectionTitle";
 import Button from "../components/ui/Button";
-import { contactLinks } from "../lib/constants";
+import { business, contactLinks, whatsappLink } from "../lib/constants";
 
 const ServiceDetailsPage = () => {
   const { slug } = useParams();
@@ -44,8 +44,7 @@ const ServiceDetailsPage = () => {
             <p className="text-sm uppercase tracking-wide text-accent">Estimated Time</p>
             <p className="mt-1 font-semibold">{service.timeRange}</p>
             <div className="mt-6 flex flex-col gap-2">
-              <Button as="link" to={`/book?service=${service.slug}`}>Book Now</Button>
-              <Button as="a" href={contactLinks.whatsapp} target="_blank" rel="noreferrer" variant="outline">WhatsApp</Button>
+              <Button as="a" href={whatsappLink(`Hi ${business.name}, I need a quote for ${service.title}.`)} target="_blank" rel="noreferrer">Get a quote on WhatsApp</Button>
               <Button as="a" href={contactLinks.call} variant="ghost">Call</Button>
             </div>
           </aside>

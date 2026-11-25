@@ -1,7 +1,7 @@
 import Seo from "../lib/seo";
 import Container from "../components/ui/Container";
 import SectionTitle from "../components/ui/SectionTitle";
-import ContactForm from "../components/ContactForm";
+import QuickQuote from "../components/QuickQuote";
 import Button from "../components/ui/Button";
 import { business, businessHours, contactLinks } from "../lib/constants";
 
@@ -12,9 +12,9 @@ const mapSrc = mapKey
 
 const ContactPage = () => (
   <>
-    <Seo title="Contact Circuit Savant" description="Call, WhatsApp, or send a service request to Circuit Savant for support anywhere in Harare." path="/contact" />
+    <Seo title="Contact Circuit Savant" description="Call, WhatsApp, or message Circuit Savant for support anywhere in Harare." path="/contact" />
     <section className="py-16">
-      <SectionTitle eyebrow="Contact" title="Get In Touch" description="Reach us by call, WhatsApp, or the contact form." />
+      <SectionTitle eyebrow="Contact" title="Get In Touch" description="The fastest way to reach us is a call or a WhatsApp message." />
       <Container className="mt-8 grid gap-6 lg:grid-cols-2">
         <div className="rounded-xl border border-line bg-surface p-6">
           <h3 className="text-lg font-semibold">Contact Options</h3>
@@ -43,9 +43,7 @@ const ContactPage = () => (
           </div>
         </div>
 
-        <div className="rounded-xl border border-line bg-surface p-6">
-          <ContactForm />
-        </div>
+        <QuickQuote />
       </Container>
     </section>
   </>

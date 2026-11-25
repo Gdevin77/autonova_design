@@ -12,8 +12,7 @@ export const contactLinks = {
   whatsapp: `https://wa.me/${business.whatsappE164}`
 };
 
-export const backendEnabled = String(import.meta.env.VITE_USE_BACKEND).toLowerCase() === "true";
-export const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+export const whatsappLink = (message) => `${contactLinks.whatsapp}?text=${encodeURIComponent(message)}`;
 
 export const businessHours = [
   "Monday - Friday: 7:00 AM - 6:00 PM",

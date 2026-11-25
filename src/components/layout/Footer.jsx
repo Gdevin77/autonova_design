@@ -47,7 +47,7 @@ const Footer = () => (
         <p className="mt-2 text-sm text-slate-300">Anywhere in Harare with mobile support.</p>
         <div className="mt-4 flex flex-col gap-2">
           <Button as="a" href={contactLinks.whatsapp} target="_blank" rel="noreferrer">WhatsApp</Button>
-          <Button as="link" to="/book" variant="ghost">Request a Service</Button>
+          <Button as="a" href={contactLinks.call} variant="ghost">Call us</Button>
         </div>
       </div>
     </Container>
