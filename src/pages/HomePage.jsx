@@ -13,8 +13,15 @@ import TestimonialCarousel from "../components/TestimonialCarousel";
 import FaqList from "../components/FaqList";
 import QuickQuote from "../components/QuickQuote";
 
-const heroImg = "https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=1800&q=80";
 const icons = [FaKey, FaMicrochip, FaGasPump, FaExclamationTriangle, FaSearch];
+
+const fixes = [
+  "Advanced computer diagnostics",
+  "Complex electrical & wiring repair",
+  "Check engine light troubleshooting",
+  "Module coding & programming",
+  "Sensor & system calibration"
+];
 
 const whyItems = [
   { icon: FaBolt, title: "Fast response", text: "Quick call-outs across Harare." },
@@ -44,7 +51,7 @@ const jsonLd = [
     "@type": "AutoRepair",
     name: business.name,
     description: business.tagline,
-    url: "https://gdevin77.github.io/autonova_design",
+    url: "https://circuitsavant.co.zw",
     telephone: `+${business.phoneE164}`,
     email: business.email,
     areaServed: "Harare, Zimbabwe",
@@ -73,7 +80,6 @@ const HomePage = () => {
       />
 
       <section className="relative overflow-hidden bg-navy text-white">
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${heroImg})` }} aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/70" aria-hidden="true" />
         <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-accent/30 blur-3xl" aria-hidden="true" />
         <Container className="relative grid items-center gap-12 pb-28 pt-14 sm:pt-20 lg:grid-cols-[1.1fr_0.9fr]">
@@ -113,6 +119,38 @@ const HomePage = () => {
           ))}
         </dl>
       </Container>
+
+      <section className="py-20">
+        <Container className="grid items-center gap-10 lg:grid-cols-2">
+          <Reveal>
+            <div className="relative">
+              <div className="absolute -inset-3 rounded-3xl bg-accent/15 blur-2xl" aria-hidden="true" />
+              <img
+                src={`${import.meta.env.BASE_URL}work-photo.jpg`}
+                alt="Circuit Savant technician diagnosing a Nissan engine bay"
+                width="901"
+                height="428"
+                loading="lazy"
+                className="relative w-full rounded-2xl border border-line object-cover shadow-card"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent">What we fix</p>
+            <h2 className="mt-2 text-3xl font-extrabold sm:text-4xl">Stuck with a check engine light or electrical faults?</h2>
+            <p className="mt-3 text-textMuted">Precision automotive diagnostics and repair, done properly and explained clearly.</p>
+            <ul className="mt-6 grid gap-3">
+              {fixes.map((item) => (
+                <li key={item} className="flex items-center gap-3 font-medium"><FaCheckCircle className="shrink-0 text-accent" /> {item}</li>
+              ))}
+            </ul>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href={contactLinks.call} className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-accentSoft"><FaPhoneAlt /> Call now</a>
+              <a href={contactLinks.whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-green-700"><FaWhatsapp /> WhatsApp us</a>
+            </div>
+          </Reveal>
+        </Container>
+      </section>
 
       <section className="py-20">
         <Reveal><SectionTitle eyebrow="Services" title="Specialist automotive electronics" description="From lost keys to stubborn warning lights, we diagnose and fix it properly." /></Reveal>

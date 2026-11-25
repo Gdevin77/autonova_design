@@ -25,7 +25,7 @@ const ContactPage = () => (
             <Button as="a" href={contactLinks.email} variant="ghost">Email</Button>
           </div>
           <p className="mt-4 text-sm text-textMuted">
-            Phone: <a href={contactLinks.call} className="font-semibold text-textPrimary hover:text-accent">{business.phoneDisplay}</a>
+            Phone: <a href={contactLinks.call} className="font-semibold text-textPrimary hover:text-accent">{business.phoneDisplay}</a> · <a href={contactLinks.call2} className="font-semibold text-textPrimary hover:text-accent">{business.phone2Display}</a>
             <br />
             Email: <a href={contactLinks.email} className="font-semibold text-textPrimary hover:text-accent">{business.email}</a>
           </p>

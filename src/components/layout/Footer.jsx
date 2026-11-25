@@ -45,7 +45,7 @@ const Footer = () => (
       <div>
         <h4 className="font-semibold">Contact</h4>
         <ul className="mt-3 space-y-3 text-sm text-slate-300">
-          <li className="flex items-start gap-3"><FaPhoneAlt className="mt-0.5 shrink-0 text-brand" /><a href={contactLinks.call} className="hover:text-white">{business.phoneDisplay}</a></li>
+          <li className="flex items-start gap-3"><FaPhoneAlt className="mt-0.5 shrink-0 text-brand" /><span><a href={contactLinks.call} className="hover:text-white">{business.phoneDisplay}</a><br /><a href={contactLinks.call2} className="hover:text-white">{business.phone2Display}</a></span></li>
           <li className="flex items-start gap-3"><FaEnvelope className="mt-0.5 shrink-0 text-brand" /><a href={contactLinks.email} className="break-all hover:text-white">{business.email}</a></li>
           <li className="flex items-start gap-3"><FaMapMarkerAlt className="mt-0.5 shrink-0 text-brand" /><span>Mobile service: {business.area}</span></li>
         </ul>
