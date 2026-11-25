@@ -22,7 +22,6 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_BUSINESS_NAME: ${{ vars.VITE_BUSINESS_NAME }}
           VITE_PHONE_DISPLAY: ${{ vars.VITE_PHONE_DISPLAY }}
           VITE_PHONE_E164: ${{ vars.VITE_PHONE_E164 }}
           VITE_WHATSAPP_E164: ${{ vars.VITE_WHATSAPP_E164 }}
