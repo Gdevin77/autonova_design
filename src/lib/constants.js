@@ -11,6 +11,7 @@ export const business = {
 export const contactLinks = {
   call: `tel:+${business.phoneE164}`,
   email: `mailto:${business.email}`,
+  instagram: "https://www.instagram.com/cir_cuitsavant",
   whatsapp: `https://wa.me/${business.whatsappE164}`
 };
 

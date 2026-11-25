@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { business, businessHours, contactLinks } from "../../lib/constants";
@@ -11,13 +11,13 @@ const Footer = () => (
         <img src={`${import.meta.env.BASE_URL}logo-full.png`} alt="Circuit Savant - Precision Automotive Diagnostics & Repair" className="h-28 w-auto" />
         <p className="mt-2 text-sm text-slate-300">Professional Automotive Key & ECU Solutions. Mobile service anywhere in Harare.</p>
         <div className="mt-4 flex gap-3 text-slate-300">
-          <a href={contactLinks.whatsapp} aria-label="WhatsApp" className="rounded bg-white/10 p-2 hover:text-white">
+          <a href={contactLinks.whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="rounded bg-white/10 p-2 hover:text-white">
             <FaWhatsapp />
           </a>
           <a href="#" aria-label="Facebook" className="rounded bg-white/10 p-2 hover:text-white">
             <FaFacebookF />
           </a>
-          <a href="#" aria-label="Instagram" className="rounded bg-white/10 p-2 hover:text-white">
+          <a href={contactLinks.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="rounded bg-white/10 p-2 hover:text-white">
             <FaInstagram />
           </a>
         </div>
@@ -43,9 +43,12 @@ const Footer = () => (
       </div>
 
       <div>
-        <h4 className="font-semibold">Need Service?</h4>
-        <p className="mt-2 text-sm text-slate-300">Anywhere in Harare with mobile support.</p>
-        <a href={contactLinks.email} className="mt-1 inline-block text-sm text-brand hover:text-white">{business.email}</a>
+        <h4 className="font-semibold">Contact</h4>
+        <ul className="mt-3 space-y-3 text-sm text-slate-300">
+          <li className="flex items-start gap-3"><FaPhoneAlt className="mt-0.5 shrink-0 text-brand" /><a href={contactLinks.call} className="hover:text-white">{business.phoneDisplay}</a></li>
+          <li className="flex items-start gap-3"><FaEnvelope className="mt-0.5 shrink-0 text-brand" /><a href={contactLinks.email} className="break-all hover:text-white">{business.email}</a></li>
+          <li className="flex items-start gap-3"><FaMapMarkerAlt className="mt-0.5 shrink-0 text-brand" /><span>Mobile service: {business.area}</span></li>
+        </ul>
         <div className="mt-4 flex flex-col gap-2">
           <Button as="a" href={contactLinks.whatsapp} target="_blank" rel="noreferrer">WhatsApp</Button>
           <Button as="a" href={contactLinks.call} variant="ghost">Call us</Button>
