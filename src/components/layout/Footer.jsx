@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
-import { businessHours, contactLinks } from "../../lib/constants";
+import { business, businessHours, contactLinks } from "../../lib/constants";
 
 const Footer = () => (
   <footer className="mt-20 border-t border-navy bg-navy text-white">
@@ -45,6 +45,7 @@ const Footer = () => (
       <div>
         <h4 className="font-semibold">Need Service?</h4>
         <p className="mt-2 text-sm text-slate-300">Anywhere in Harare with mobile support.</p>
+        <a href={contactLinks.email} className="mt-1 inline-block text-sm text-brand hover:text-white">{business.email}</a>
         <div className="mt-4 flex flex-col gap-2">
           <Button as="a" href={contactLinks.whatsapp} target="_blank" rel="noreferrer">WhatsApp</Button>
           <Button as="a" href={contactLinks.call} variant="ghost">Call us</Button>

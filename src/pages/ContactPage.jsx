@@ -14,7 +14,7 @@ const ContactPage = () => (
   <>
     <Seo title="Contact Circuit Savant" description="Call, WhatsApp, or message Circuit Savant for support anywhere in Harare." path="/contact" />
     <section className="py-16">
-      <SectionTitle eyebrow="Contact" title="Get In Touch" description="The fastest way to reach us is a call or a WhatsApp message." />
+      <SectionTitle eyebrow="Contact" title="Get In Touch" description="The fastest way to reach us is a call or a WhatsApp message. For anything else, email us." />
       <Container className="mt-8 grid gap-6 lg:grid-cols-2">
         <div className="rounded-xl border border-line bg-surface p-6">
           <h3 className="text-lg font-semibold">Contact Options</h3>
@@ -22,7 +22,13 @@ const ContactPage = () => (
           <div className="mt-4 flex flex-wrap gap-3">
             <Button as="a" href={contactLinks.call}>Call</Button>
             <Button as="a" href={contactLinks.whatsapp} target="_blank" rel="noreferrer" variant="outline">WhatsApp</Button>
+            <Button as="a" href={contactLinks.email} variant="ghost">Email</Button>
           </div>
+          <p className="mt-4 text-sm text-textMuted">
+            Phone: <a href={contactLinks.call} className="font-semibold text-textPrimary hover:text-accent">{business.phoneDisplay}</a>
+            <br />
+            Email: <a href={contactLinks.email} className="font-semibold text-textPrimary hover:text-accent">{business.email}</a>
+          </p>
 
           <h4 className="mt-6 font-semibold">Business Hours</h4>
           <ul className="mt-2 space-y-1 text-sm text-textMuted">

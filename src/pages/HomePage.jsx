@@ -46,6 +46,7 @@ const jsonLd = [
     description: business.tagline,
     url: "https://gdevin77.github.io/autonova_design",
     telephone: `+${business.phoneE164}`,
+    email: business.email,
     areaServed: "Harare, Zimbabwe",
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "18:00" },
