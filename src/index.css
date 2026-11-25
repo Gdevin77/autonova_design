@@ -20,3 +20,17 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   .reveal, .fade-in-up { opacity: 1; transform: none; transition: none; animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* Preloader */
+@keyframes cs-drive { from { transform: translateX(-100%); } to { transform: translateX(100vw); } }
+@keyframes cs-spin { to { transform: rotate(360deg); } }
+@keyframes cs-road { to { background-position-x: -48px; } }
+@keyframes cs-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.cs-car { animation: cs-drive 2.1s cubic-bezier(0.45, 0.05, 0.35, 1) forwards; }
+.cs-wheel { transform-box: fill-box; transform-origin: center; animation: cs-spin 0.45s linear infinite; }
+.cs-road { background-image: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0 24px, transparent 24px 48px); background-size: 48px 2px; animation: cs-road 0.3s linear infinite; }
+.cs-fade { animation: cs-fade 0.6s ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .cs-car { animation: none; transform: translateX(calc(50vw - 50%)); }
+  .cs-wheel, .cs-road, .cs-fade { animation: none; }
+}
