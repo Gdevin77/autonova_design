@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://circuitsavant.co.zw/</loc></url>
-  <url><loc>https://circuitsavant.co.zw/services</loc></url>
-  <url><loc>https://circuitsavant.co.zw/about</loc></url>
-  <url><loc>https://circuitsavant.co.zw/contact</loc></url>
+  <url><loc>https://circuitsavant.co.zw/</loc><lastmod>2026-11-25</lastmod><priority>1.0</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services</loc><lastmod>2026-11-25</lastmod><priority>0.9</priority></url>
+  <url><loc>https://circuitsavant.co.zw/about</loc><lastmod>2026-11-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://circuitsavant.co.zw/contact</loc><lastmod>2026-11-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/key-programming</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/ecu-coding</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/injector-coding</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/error-codes-clearing</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/fault-finding</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/immobilizer-repair</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/battery-registration</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/module-reset-and-adaptation</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://circuitsavant.co.zw/services/electrical-diagnostics</loc><lastmod>2026-11-25</lastmod><priority>0.7</priority></url>
 </urlset>

@@ -4,7 +4,7 @@ import SectionTitle from "../components/ui/SectionTitle";
 
 const AboutPage = () => (
   <>
-    <Seo title="About Circuit Savant" description="Professional automotive key and ECU specialists serving Harare with mobile support." path="/about" />
+    <Seo title="About Circuit Savant | Automotive Diagnostics in Harare" description="Professional automotive key and ECU specialists serving Harare with mobile support." path="/about" />
     <section className="py-16">
       <SectionTitle eyebrow="About" title="Professional Automotive Key & ECU Solutions" description="Circuit Savant delivers specialized mobile automotive diagnostics and programming services across Harare." />
       <Container className="mt-8 grid gap-6 lg:grid-cols-2">

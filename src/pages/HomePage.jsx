@@ -52,6 +52,11 @@ const jsonLd = [
     name: business.name,
     description: business.tagline,
     url: "https://circuitsavant.co.zw",
+    "@id": "https://circuitsavant.co.zw/#business",
+    image: "https://circuitsavant.co.zw/og-image.png",
+    logo: "https://circuitsavant.co.zw/logo-icon.png",
+    sameAs: [contactLinks.instagram],
+    address: { "@type": "PostalAddress", addressLocality: "Harare", addressCountry: "ZW" },
     telephone: `+${business.phoneE164}`,
     email: business.email,
     areaServed: "Harare, Zimbabwe",
@@ -73,8 +78,8 @@ const HomePage = () => {
   return (
     <>
       <Seo
-        title="Circuit Savant - Precision Automotive Diagnostics & Repair"
-        description="Professional automotive key programming, ECU coding, injector coding, diagnostics, and mobile support anywhere in Harare."
+        title="Car Diagnostics, ECU & Key Programming in Harare | Circuit Savant"
+        description="Mobile car diagnostics, electrical repair, ECU coding and key programming in Harare. Call or WhatsApp Circuit Savant for fast, professional service."
         path="/"
         jsonLd={jsonLd}
       />
