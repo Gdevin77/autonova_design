@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { serviceOptions } from "../data/services";
-import { business } from "../lib/constants";
+import { business, contactLinks } from "../lib/constants";
 import Input from "./ui/Input";
 import Select from "./ui/Select";
 
@@ -23,7 +23,10 @@ const QuickQuote = () => {
         <a href={href} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg bg-green-600 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-green-700">
           <FaWhatsapp size={18} /> Get my quote on WhatsApp
         </a>
-        <p className="text-center text-xs text-textMuted">Opens WhatsApp with your details filled in.</p>
+        <p className="text-center text-xs text-textMuted">
+          Opens WhatsApp with your details filled in. Not opening? Call{" "}
+          <a href={contactLinks.call} className="font-semibold text-accent">{business.phoneDisplay}</a>.
+        </p>
       </div>
     </div>
   );

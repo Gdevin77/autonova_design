@@ -1,10 +1,17 @@
+// WhatsApp and tel links need digits only, with the country code (e.g. 263781339253).
+// This cleans up "+", spaces and a leading 0 if a setting was typed in another format.
+const waDigits = (value, fallback) => {
+  const digits = String(value || fallback).replace(/\D/g, "");
+  return digits.startsWith("0") ? `263${digits.slice(1)}` : digits;
+};
+
 export const business = {
   name: "Circuit Savant",
   tagline: "Professional Automotive Key & ECU Solutions",
   area: import.meta.env.VITE_SERVICE_AREA || "Anywhere in Harare",
   phoneDisplay: import.meta.env.VITE_PHONE_DISPLAY || "+263 78 133 9253",
-  phoneE164: import.meta.env.VITE_PHONE_E164 || "263781339253",
-  whatsappE164: import.meta.env.VITE_WHATSAPP_E164 || "263781339253",
+  phoneE164: waDigits(import.meta.env.VITE_PHONE_E164, "263781339253"),
+  whatsappE164: waDigits(import.meta.env.VITE_WHATSAPP_E164, "263781339253"),
   phone2Display: "+263 71 300 9608",
   phone2E164: "263713009608",
   email: import.meta.env.VITE_EMAIL || "info@circuitsavant.co.zw"

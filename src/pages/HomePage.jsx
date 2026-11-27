@@ -78,7 +78,7 @@ const HomePage = () => {
   return (
     <>
       <Seo
-        title="Car Diagnostics, ECU & Key Programming in Harare | Circuit Savant"
+        title="Car Diagnostics & Key Programming in Harare | Circuit Savant"
         description="Mobile car diagnostics, electrical repair, ECU coding and key programming in Harare. Call or WhatsApp Circuit Savant for fast, professional service."
         path="/"
         jsonLd={jsonLd}
